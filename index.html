@@ -1,19 +1,19 @@
 <!doctype html>
-<html lang="zh" class="no-js">
+<html lang="zh" class="no-js">                               <!--定义HTML文档，设置语言为中文，并添加一个类名为no-js，这个类名会在JavaScript加载后被移除。-->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ZhangRuiZhe</title>
-  <meta name="Description" content="Home Page of iissnan">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">      <!--设置IE浏览器的兼容性模式为最边缘模式，即尽可能使用最新的渲染引擎。-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--设置视口属性，确保页面在移动设备上正确显示。-->
+  <title>ZhangRuiZhe</title>                                 <!--设置网页标题为“ZhangRuiZhe”。-->
+  <meta name="Description" content="Home Page of zrz">
   <meta name="color-scheme" content="dark light">
-  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>      <!--指定页面支持的配色方案，包括深色和浅色模式。-->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>       <!--链接到一个外部CSS文件-->
 </head>
 
 <body>
-  <div class="vi">
-    <h1 class="animate-slide-in-down">Zhangruizhe</h1>
+  <div class="zi">
+    <h1 class="animate-slide-in-down">Zhangruizhe</h1>      <!--一个标题，使用animate-slide-in-down类来定义动画效果。-->
     <div class="quote">
       <span class="quote-line quote-line-start animate-slide-in-left"></span>
       <span class="quote-icon quote-icon-start animate-slide-in-down">
@@ -36,10 +36,10 @@
       <span class="location-icon animate-slide-in-up">
         <i class="icon icon-map-pin"></i>
       </span>
-      <span class="location-text animate-slide-in-down">Anhui Hefei - China</span>
+      <span class="location-text animate-slide-in-down">China</span>
     </div>
     <div class="relocating">
-      Navigating to: <span class="relocate-location"></span>...
+      Navigating to: <span class="relocate-location">china</span>...
     </div>
   </div>
 
@@ -51,7 +51,6 @@
       var SLIDE_IN_LEFT = { left: 0 };
       var SLIDE_IN_RIGHT = { right: 0 };
 
-      registerCheatCode();
       executeAnimations();
 
       function executeAnimations() {
@@ -106,20 +105,6 @@
           .promise();
       }
 
-      function registerCheatCode() {
-        $(document.body).on('keydown', function (event) {
-          var KEY_B = 66;
-
-          if (event.which === KEY_B) {
-            $('.relocate-location').text('Bookmark Page');
-            $('.relocating').css('opacity', 1);
-
-            window.setTimeout(function () {
-              window.location.href = '/bookmarks.html';
-            }, 1000);
-          }
-        });
-      }
     });
   </script>
 </body>
