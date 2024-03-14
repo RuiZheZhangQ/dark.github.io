@@ -37,7 +37,7 @@ ul, ol { list-style: none; }
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
+  line-height: 5;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
@@ -89,13 +89,13 @@ ul, ol { list-style: none; }
 
 /* Headline
 /* ================================================= */
-.vi {
+.zi {
   margin: 100px auto 0;
   max-width: 780px;
 }
 
 @media (max-width: 767px) {
-  .vi { margin-top: 50px; }
+  .zi { margin-top: 50px; }
 }
 
 
