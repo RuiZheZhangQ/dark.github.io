@@ -37,7 +37,7 @@ ul, ol { list-style: none; }
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 5;
+  line-height: 1;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
